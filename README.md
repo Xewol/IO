@@ -1,2 +1,2 @@
 # IO
-Inżynieria Oprogramowania
+Inżynieria Oprogramowania - kontrola źródła.
