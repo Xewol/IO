@@ -8,6 +8,7 @@
 
 class Szpital
 {
+	//nie dziala
 	auto Pacjenci = std::vector<std::unique_ptr<Pacjent>>;
 public:
 
