@@ -18,19 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Pacjent.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Adres_zamieszkania.h" />
-    <ClInclude Include="Pacjent.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{1d8c04df-b82f-446f-8f5a-1982d574baa1}</ProjectGuid>
-    <RootNamespace>AIDSystem</RootNamespace>
+    <ProjectGuid>{e72b3754-a3de-41f6-ad58-205767ee3321}</ProjectGuid>
+    <RootNamespace>Aplikacja</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,6 +138,13 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Aplikacja.cpp" />
+    <ClCompile Include="pacjent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pacjent.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
