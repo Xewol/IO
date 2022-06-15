@@ -8,12 +8,14 @@
 
 class Szpital
 {
-	//nie dziala
-	auto Pacjenci = std::vector<std::unique_ptr<Pacjent>>;
+	
+	 std::vector<std::unique_ptr<Pacjent>> m_pacjenci;
+	 
 public:
-
-
+	std::vector < std::unique_ptr<Pacjent>> getPacjenci() { return m_pacjenci; }
+	
 };
+
 
 
 #endif // !SZPITAL_H
