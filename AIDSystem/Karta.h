@@ -1,5 +1,5 @@
-#ifndef KLASA_H
-#define KLASA_H
+#ifndef KARTA_H
+#define KARTA_H
 
 class Karta
 {
@@ -7,4 +7,4 @@ class Karta
 
 };
 
-#endif // !KLASA_H
+#endif // !KARTA_H
