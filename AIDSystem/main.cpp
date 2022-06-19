@@ -30,4 +30,5 @@ void test1() {
 int main()
 {
 
+	std::cout << "Elo" << std::endl;
 }

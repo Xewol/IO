@@ -17,7 +17,7 @@ struct Dane {
 std::vector<Pacjent> loadDBPacjent();
 
 std::vector<Pracownik> loadDBPracownik();
-Dane loadDBKarta();
+std::vector<Karta> loadDBKarta();
 
 
 

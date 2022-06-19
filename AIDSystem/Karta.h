@@ -9,7 +9,9 @@ public:
 	std::vector<std::string> m_historia;
 	std::vector<std::string> m_leki;
 
-	Karta();
+	Karta(int,std::vector<std::string>,std::vector<std::string>);
+
+	friend std::ostream& operator<< (std::ostream& os, const Karta& k);
 	
 };
 
