@@ -16,9 +16,19 @@ void Pacjent::setOddzial(int id)
 	m_Oddzial = id;
 }
 
+void Pacjent::setNrKarty(int id)
+{
+	m_Karta_pacjenta = id;
+}
+
 int Pacjent::getOddzial() const
 {
 	return m_Oddzial;
+}
+
+int Pacjent::getNrKarty() const
+{
+	return m_Karta_pacjenta;
 }
 
 std::ostream& operator<<(std::ostream& os, const Pacjent& p)

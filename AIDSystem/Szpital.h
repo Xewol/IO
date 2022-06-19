@@ -23,6 +23,7 @@ public:
 	}
 	
 	void przyjmij_pacjenta(Pacjent *p, int id);
+	void zalozKarte(Pacjent *p);
 	
 };
 

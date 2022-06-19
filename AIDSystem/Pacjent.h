@@ -20,7 +20,9 @@ public:
 			std::string ulica, int numer_domu, int numer_mieszkania, std::string kod_pocztowy, std::string miasto, std::string kraj);
 	friend std::ostream& operator<< (std::ostream& os, const Pacjent& p);
 	void setOddzial(int id);
+	void setNrKarty(int id);
 	int getOddzial() const;
+	int getNrKarty() const;
 };
 
 #endif // !PACJENT_H
