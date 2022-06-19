@@ -9,6 +9,7 @@ public:
 	Rola(std::string Nazwa);
 	void setNazwa(std::string nazwa);
 	std::string getNazwa() const;
+	Rola() {};
 };
 
 #endif // !ROLA_H

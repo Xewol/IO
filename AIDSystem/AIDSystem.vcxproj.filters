@@ -21,6 +21,24 @@
     <ClCompile Include="Pacjent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Oddzial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Szpital.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rola.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pracownik.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Karta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Pacjent.h">
@@ -30,6 +48,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Szpital.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rola.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pracownik.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Oddzial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Karta.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

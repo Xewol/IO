@@ -1,0 +1,30 @@
+ID: 1
+Imie: Katarzyna
+Nazwisko: Cichopek
+Pesel: 05220739630
+Rola: Pielegniarka
+Zarobki: 2000
+Nr_tel: 535204141
+Data_uro: 07-02-2005
+Ulica: Jana Pawla III
+Dom: 6
+Mieszkanie: 9
+Kod: 71-122
+Miejscowosc: Szczecin
+Kraj: Polska
+-------------
+ID: 7
+Imie: Mariusz
+Nazwisko: Kolanski
+Pesel: 78594749213
+Rola: Lekarz
+Zarobki: 2001
+Nr_tel: 535204141
+Data_uro: 15-07-1978
+Ulica: Jana Pawla III
+Dom: 9
+Mieszkanie: 6
+Kod: 71-138
+Miejscowosc: Szczecin
+Kraj: Polska
+-------------

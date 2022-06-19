@@ -4,6 +4,7 @@ Rola::Rola(std::string Nazwa) :
 	m_Nazwa{ Nazwa }
 {}
 
+
 void Rola::setNazwa(std::string nazwa)
 {
 	m_Nazwa = nazwa;

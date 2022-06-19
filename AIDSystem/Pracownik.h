@@ -19,6 +19,7 @@ class Pracownik
 	std::string m_nr_tel;
 	std::string m_data_urodzenia;
 public:
+	Pracownik() {};
 	Pracownik(int ID, std::string Imie, std::string Nazwisko, std::string PESEL, std::string Rola, std::string Zarobki, std::string nr_tel, std::string data_urodzenia,
 		std::string ulica, int numer_domu, int numer_mieszkania, std::string kod_pocztowy, std::string miasto, std::string kraj);
 	std::string getImie() const;

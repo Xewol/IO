@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="Karta.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Oddzial.cpp" />
     <ClCompile Include="Pacjent.cpp" />
@@ -28,6 +30,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Adres_zamieszkania.h" />
+    <ClInclude Include="Karta.h" />
     <ClInclude Include="Pacjent.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="Szpital.h" />
