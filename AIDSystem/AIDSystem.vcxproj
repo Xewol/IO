@@ -20,11 +20,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Oddzial.cpp" />
     <ClCompile Include="Pacjent.cpp" />
+    <ClCompile Include="Pracownik.cpp" />
+    <ClCompile Include="Rola.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Adres_zamieszkania.h" />
+    <ClInclude Include="Oddzial.h" />
     <ClInclude Include="Pacjent.h" />
+    <ClInclude Include="Pracownik.h" />
+    <ClInclude Include="Rola.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

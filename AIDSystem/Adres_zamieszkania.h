@@ -1,5 +1,5 @@
 #ifndef ADRES_ZAMIESZKANIA_H
-#define ADRES_ZAMIESZKANIA
+#define ADRES_ZAMIESZKANIA_H
 
 #include <string>
 
