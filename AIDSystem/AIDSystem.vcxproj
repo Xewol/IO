@@ -25,6 +25,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Adres_zamieszkania.h" />
+    <ClInclude Include="Global.h" />
     <ClInclude Include="Pacjent.h" />
     <ClInclude Include="Szpital.h" />
   </ItemGroup>

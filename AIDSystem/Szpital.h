@@ -5,14 +5,19 @@
 #include <vector>
 #include <memory>
 #include "Pacjent.h"
-
+#include "Global.h"
 class Szpital
 {
 	
-	 std::vector<std::unique_ptr<Pacjent>> m_pacjenci;
 	 
 public:
-	std::vector < std::unique_ptr<Pacjent>> getPacjenci() { return m_pacjenci; }
+	  std::vector<Pacjent> m_pacjenci;
+
+	Szpital() {
+		m_pacjenci = loadDB();
+	}
+
+	
 	
 };
 

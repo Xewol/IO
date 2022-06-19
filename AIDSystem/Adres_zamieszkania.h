@@ -1,5 +1,5 @@
 #ifndef ADRES_ZAMIESZKANIA_H
-#define ADRES_ZAMIESZKANIA
+#define ADRES_ZAMIESZKANIA_H
 
 #include <string>
 
@@ -10,6 +10,7 @@ struct Adres_zamieszkania {
 	std::string m_Kod_pocztowy;
 	std::string m_Miasto;
 	std::string m_Kraj;
+	Adres_zamieszkania() {};
 	Adres_zamieszkania(std::string ulica, int numer_domu, int numer_mieszkania, std::string kod_pocztowy, std::string miasto, std::string kraj) :
 		m_Ulica{ ulica },
 		m_Numer_domu{ numer_domu },

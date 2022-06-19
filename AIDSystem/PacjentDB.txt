@@ -1,0 +1,26 @@
+ID: 100
+Imie: Bartosz
+Nazwisko: Deluga
+Pesel: 00220706638
+Karta: 23
+Oddzial: 2
+Ulica: Roweckiego
+Dom: 65
+Mieszkanie: 12
+Kod: 72-010
+Miejscowosc: Police
+Kraj: Polska
+-------------
+ID: 201
+Imie: Maciej
+Nazwisko: Sanocki
+Pesel: 00320846632
+Karta: 27
+Oddzial: 1
+Ulica: Drezdenska
+Dom: 32
+Mieszkanie: 1
+Kod: 66-530
+Miejscowosc: Drezdenko
+Kraj: Polska
+-------------
