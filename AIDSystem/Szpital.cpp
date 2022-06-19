@@ -1,0 +1,1 @@
+#include "Szpital.h"

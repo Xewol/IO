@@ -1,3 +1,5 @@
+
+
 UML/
 
 
@@ -400,3 +402,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+>>>>>>> 3aac2429452d7c27b473d5539d0fbd5b5d67659a
