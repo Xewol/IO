@@ -22,10 +22,18 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Oddzial.cpp" />
     <ClCompile Include="Pacjent.cpp" />
+    <ClCompile Include="Szpital.cpp" />
+    <ClCompile Include="Rola.cpp" />
+    <ClCompile Include="Pracownik.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Adres_zamieszkania.h" />
     <ClInclude Include="Pacjent.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="Szpital.h" />
+    <ClInclude Include="Rola.h" />
+    <ClInclude Include="Pracownik.h" />
+    <ClInclude Include="Oddzial.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
