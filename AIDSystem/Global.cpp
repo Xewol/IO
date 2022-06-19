@@ -174,10 +174,30 @@ std::vector<Pracownik> loadDBPracownik()
 	return pracownicy;
 }
 
-Dane loadDBKarta()
+std::vector<Karta> loadDBKarta()
 {
 	Dane dane;
+	std::vector<Karta>karty;
+	std::string line;
+	std::fstream file;
+	file.open("DB/KartaDB.txt");
+	std::getline(file, line);
+	dane.ID = stoi(line);
+	bool hist = true;
+	while (std::getline(file, line)) {
+		auto idx = line.find("-");
+		if (idx == 0) {
+			hist = false;
+			continue;
+		}
+		if (hist) dane.historia.push_back(line);
+		else dane.leki.push_back(line);
+		
 	
-	return dane;
+	}
+	Karta karta(dane.ID, dane.historia, dane.leki);
+	karty.push_back(karta);
+	return karty;
+
 }
 
