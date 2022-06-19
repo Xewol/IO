@@ -23,8 +23,8 @@ public:
 	}
 	
 	void przyjmij_pacjenta(Pacjent *p, int id);
+	
 	void zalozKarte(Pacjent *p);
-	void ustalDawkiLekow(Pacjent* pa, std::string lek);
 	
 };
 

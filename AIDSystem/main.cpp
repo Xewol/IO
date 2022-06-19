@@ -14,7 +14,7 @@ void test1() {
 	std::cout << "Przyjecie pacjenta: \n";
 	auto it = std::find_if(SZP1.m_pacjenci.begin(), SZP1.m_pacjenci.end(), [&](Pacjent const& p) {return p.getOddzial() == 0; });
 	std::cout << *it << std::endl << std::endl;
-	Sleep(500);
+	Sleep(1000);
 	auto indx = std::distance(SZP1.m_pacjenci.begin(), it);
 	//Przyjecie pacjenta na oddzial
 	std::cout << "Zalozenie karty: \nnr karty: " << SZP1.m_pacjenci[indx].getNrKarty();
@@ -24,9 +24,9 @@ void test1() {
 	std::cout << "nr karty: " << SZP1.m_pacjenci[indx].getNrKarty() << std::endl;
 	std::cout << "Zapisanie na oddzial: \nnr oddzialu: " << SZP1.m_pacjenci[indx].getOddzial();
 	SZP1.przyjmij_pacjenta(&SZP1.m_pacjenci[indx], 1);
-	Sleep(200);
+	Sleep(1000);
 	std::cout << " --> ";
-	Sleep(500);
+	Sleep(1000);
 	std::cout << "nr oddzialu: " << SZP1.m_pacjenci[indx].getOddzial() << std::endl;
 	std::cout << "Ustalenie lekarstw: " << std::endl;
 	SZP1.ustalDawkiLekow(&SZP1.m_pacjenci[indx], "19-06-2022 Xanax 20mg");
@@ -37,7 +37,10 @@ void test1() {
 		std::cout << i << std::endl;
 	}
 }
+ //
+void test2() {
 
+}
 
 int main()
 {
