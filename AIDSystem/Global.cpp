@@ -5,7 +5,7 @@ std::vector<Pacjent> loadDBPacjent()
 		std::vector<Pacjent> pacjenci;
 		std::string line;
 		std::fstream file;
-		file.open("PacjentDB.txt");
+		file.open("DB/PacjentDB.txt");
 		int cnt = 0;
 		std::string imie, nazwisko, pesel, ulica, kod_pocztowy, miasto, kraj;
 		int ID, karta, oddzial, nr_domu, nr_mieszkania;
@@ -87,7 +87,7 @@ std::vector<Pracownik> loadDBPracownik()
 
 	std::string line;
 	std::fstream file;
-	file.open("PracownikDB.txt");
+	file.open("DB/PracownikDB.txt");
 	int cnt = 0;
 	std::string imie, nazwisko, pesel, rola, zarobki, nr_tel, data_uro, ulica, kod_pocztowy, miasto, kraj;
 	int ID, karta, oddzial, nr_domu, nr_mieszkania;
@@ -173,3 +173,11 @@ std::vector<Pracownik> loadDBPracownik()
 
 	return pracownicy;
 }
+
+Dane loadDBKarta()
+{
+	Dane dane;
+	
+	return dane;
+}
+
