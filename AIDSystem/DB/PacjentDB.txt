@@ -15,7 +15,7 @@ ID: 201
 Imie: Maciej
 Nazwisko: Sanocki
 Pesel: 00320846632
-Karta: 23
+Karta: 27
 Oddzial: 1
 Ulica: Drezdenska
 Dom: 32

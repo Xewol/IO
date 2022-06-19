@@ -23,8 +23,10 @@ public:
 	}
 	
 	void przyjmij_pacjenta(Pacjent *p, int id);
-	
+	void ustalDawkiLekow(Pacjent* pa, std::string lek);
 	void zalozKarte(Pacjent *p);
+	int wykonajZabieg(Pacjent* p,std::string zabieg);
+	void zwolnij_pacjenta(Pacjent* p);
 	
 };
 

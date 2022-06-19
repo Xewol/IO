@@ -29,21 +29,37 @@ void test1() {
 	Sleep(1000);
 	std::cout << "nr oddzialu: " << SZP1.m_pacjenci[indx].getOddzial() << std::endl;
 	std::cout << "Ustalenie lekarstw: " << std::endl;
-	SZP1.ustalDawkiLekow(&SZP1.m_pacjenci[indx], "19-06-2022 Xanax 20mg");
+	SZP1.ustalDawkiLekow(&SZP1.m_pacjenci[indx], "19.06.2022 Xanax 20mg");
 	auto itK = std::find_if(SZP1.m_karty.begin(), SZP1.m_karty.end(), [&](const Karta& k) {return k.m_ID == SZP1.m_pacjenci[indx].getNrKarty(); });
 	auto indxK = std::distance(SZP1.m_karty.begin(), itK);
-	std::cout << "\nLekarstwa pacjenta: \n";
-	for (const auto& i : SZP1.m_karty[indxK].m_leki) {
-		std::cout << i << std::endl;
-	}
+	Sleep(1000);
+	std::cout<<SZP1.m_karty[indxK];
+
 }
- //
+ //Pacjent jest na oddziale
 void test2() {
+	//Wykonanie zabiegu
+	
+	auto it = std::find_if(SZP1.m_pacjenci.begin(), SZP1.m_pacjenci.end(), [&](Pacjent const& p) {return p.getOddzial() != 0; });
+	std::cout << *it << std::endl << std::endl;
+	Sleep(1000);
+	auto indx = std::distance(SZP1.m_pacjenci.begin(), it);
+	int karta= SZP1.wykonajZabieg(&SZP1.m_pacjenci[indx], "19.06.2022 Wyciecie wyrostka robaczkowego.");
+	SZP1.ustalDawkiLekow(&SZP1.m_pacjenci[indx], "19.06.2022 Morfina .5mg");
+	Sleep(1000);
+	std::cout << SZP1.m_karty[karta];
+	
+	std::cout << "Wypisanie pacjenta: \n\n";
+	Sleep(1000);
+	//wypisanie
+	SZP1.zwolnij_pacjenta(&SZP1.m_pacjenci[indx]);
+	Sleep(1000);
+	std::cout << *it;
 
 }
 
 int main()
 {
 
-	test1();
+	test2();
 }

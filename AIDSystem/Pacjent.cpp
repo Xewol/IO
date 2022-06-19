@@ -33,7 +33,7 @@ int Pacjent::getNrKarty() const
 
 std::ostream& operator<<(std::ostream& os, const Pacjent& p)
 {
-	os << " Pacjent nr " << p.m_ID << " (nr karty: " << p.m_Karta_pacjenta << ")\n Imie: " << p.m_Imie << "\n Nazwisko: " << p.m_Nazwisko << "\n PESEL: " << p.m_PESEL << "\n Numer oddzialu: " << p.m_Oddzial << "\nAdres zamieszkania: " << "\n\t" << p.m_Adres_zamieszkania.m_Ulica << " " << p.m_Adres_zamieszkania.m_Numer_domu << "/" << p.m_Adres_zamieszkania.m_Numer_mieszkania << "\n\t" << p.m_Adres_zamieszkania.m_Kod_pocztowy << " " << p.m_Adres_zamieszkania.m_Miasto << "\n\t" << p.m_Adres_zamieszkania.m_Kraj;
+	os << "Pacjent nr " << p.m_ID << " (nr karty: " << p.m_Karta_pacjenta << ")\nImie: " << p.m_Imie << "\nNazwisko: " << p.m_Nazwisko << "\nPESEL: " << p.m_PESEL << "\nNumer oddzialu: " << p.m_Oddzial << "\nAdres zamieszkania: " << "\n\t" << p.m_Adres_zamieszkania.m_Ulica << " " << p.m_Adres_zamieszkania.m_Numer_domu << "/" << p.m_Adres_zamieszkania.m_Numer_mieszkania << "\n\t" << p.m_Adres_zamieszkania.m_Kod_pocztowy << " " << p.m_Adres_zamieszkania.m_Miasto << "\n\t" << p.m_Adres_zamieszkania.m_Kraj;
 	return os;
 }
 //td::string Ulica;

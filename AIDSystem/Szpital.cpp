@@ -20,11 +20,27 @@ void Szpital::zalozKarte(Pacjent* p)
 	p->setNrKarty(nowa_karta.m_ID);
 }
 
+int Szpital::wykonajZabieg(Pacjent* p,std::string zabieg)
+{
+	auto itK = std::find_if(m_karty.begin(), m_karty.end(), [&](const Karta& k) {return k.m_ID == p->getNrKarty(); });
+	auto indxK = std::distance(m_karty.begin(), itK);
+	auto itPr = std::find_if(m_pracownicy.begin(), m_pracownicy.end(), [&](const Pracownik& pr) {return pr.getRole() == "Lekarz"; });
+	auto indxPr = std::distance(m_pracownicy.begin(), itPr);
+	std::cout << "Zabieg wykonał Lekarz: " << m_pracownicy[indxPr].getImie()<<"\n\n";
+	m_karty[indxK].m_historia.push_back(zabieg);
+	return indxK;
+}
+
+void Szpital::zwolnij_pacjenta(Pacjent* p)
+{
+	p->setOddzial(0);
+}
+
 void Szpital::ustalDawkiLekow(Pacjent* pa, std::string lek)
 {
 	auto itPr = std::find_if(m_pracownicy.begin(), m_pracownicy.end(), [&](const Pracownik& pr) {return pr.getRole() == "Lekarz"; });
 	auto indxPr = std::distance(m_pracownicy.begin(), itPr);
-	std::cout << "Dawki lekow ustalone przez lekarza: " << m_pracownicy[indxPr].getImie();
+	std::cout << "Dawki lekow ustalone przez lekarza: " << m_pracownicy[indxPr].getImie()<<"\n\n";
 	
 	auto itK = std::find_if(m_karty.begin(), m_karty.end(), [&](const Karta& k) {return k.m_ID == pa->getNrKarty(); });
 	auto indxK = std::distance(m_karty.begin(), itK);
