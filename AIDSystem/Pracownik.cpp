@@ -17,6 +17,12 @@ std::string Pracownik::getImie() const
 	return m_Imie;
 }
 
+std::string Pracownik::getRole() const
+{
+	return m_rola.getNazwa();
+}
+
+
 std::ostream& operator<<(std::ostream& os, const Pracownik& p)
 {
 	os << p.m_rola.getNazwa() << ": " << p.m_Imie << " " << p.m_Nazwisko << " (Nr pracownika: " << p.m_ID << ")"
