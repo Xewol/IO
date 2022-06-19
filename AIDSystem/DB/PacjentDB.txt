@@ -3,7 +3,7 @@ Imie: Bartosz
 Nazwisko: Deluga
 Pesel: 00220706638
 Karta: 23
-Oddzial: 2
+Oddzial: 0
 Ulica: Roweckiego
 Dom: 65
 Mieszkanie: 12

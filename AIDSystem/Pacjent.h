@@ -19,6 +19,8 @@ public:
 	Pacjent(int ID, std::string Imie, std::string Nazwisko, std::string PESEL, int Karta_pacjenta, int Oddzial,
 			std::string ulica, int numer_domu, int numer_mieszkania, std::string kod_pocztowy, std::string miasto, std::string kraj);
 	friend std::ostream& operator<< (std::ostream& os, const Pacjent& p);
+	void setOddzial(int id);
+	int getOddzial() const;
 };
 
 #endif // !PACJENT_H

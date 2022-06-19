@@ -11,6 +11,16 @@ Pacjent::Pacjent(int ID, std::string Imie, std::string Nazwisko, std::string PES
 	m_Adres_zamieszkania{ ulica, numer_domu, numer_mieszkania, kod_pocztowy, miasto, kraj }
 {}
 
+void Pacjent::setOddzial(int id)
+{
+	m_Oddzial = id;
+}
+
+int Pacjent::getOddzial() const
+{
+	return m_Oddzial;
+}
+
 std::ostream& operator<<(std::ostream& os, const Pacjent& p)
 {
 	os << " Pacjent nr " << p.m_ID << " (nr karty: " << p.m_Karta_pacjenta << ")\n Imie: " << p.m_Imie << "\n Nazwisko: " << p.m_Nazwisko << "\n PESEL: " << p.m_PESEL << "\n Numer oddzialu: " << p.m_Oddzial << "\nAdres zamieszkania: " << "\n\t" << p.m_Adres_zamieszkania.m_Ulica << " " << p.m_Adres_zamieszkania.m_Numer_domu << "/" << p.m_Adres_zamieszkania.m_Numer_mieszkania << "\n\t" << p.m_Adres_zamieszkania.m_Kod_pocztowy << " " << p.m_Adres_zamieszkania.m_Miasto << "\n\t" << p.m_Adres_zamieszkania.m_Kraj;

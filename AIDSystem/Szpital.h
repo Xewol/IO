@@ -20,8 +20,8 @@ public:
 		m_pacjenci = loadDBPacjent();
 		m_pracownicy = loadDBPracownik();
 	}
-
 	
+	void przyjmij_pacjenta(Pacjent *p, int id);
 	
 };
 
