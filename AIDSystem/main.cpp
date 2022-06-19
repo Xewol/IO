@@ -18,6 +18,7 @@ void test1() {
 	auto indx = std::distance(SZP1.m_pacjenci.begin(), it);
 	//Przyjecie pacjenta na oddzial
 	std::cout << "Zapisanie na oddzial: \nnr oddzialu: " << SZP1.m_pacjenci[indx].getOddzial();
+	
 	SZP1.przyjmij_pacjenta(&SZP1.m_pacjenci[indx], 1);
 	Sleep(1000);
 	std::cout << " --> ";

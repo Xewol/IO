@@ -23,8 +23,6 @@ public:
 	}
 	
 	void przyjmij_pacjenta(Pacjent *p, int id);
-	void wykonaj_badanie(Pacjent* p, Pracownik pracownik);
-
 	
 };
 
